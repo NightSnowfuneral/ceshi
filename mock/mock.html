@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>mock</title>
+    <script src="./jquery-3.1.1.min.js"></script>
+  </head>
+  <body>
+    <script type="text/javascript">
+      $.ajax({
+      url: 'http://localhost:3000/test',
+      type: 'POST',
+      data: {ajaj:"b"},
+      dataType: 'json'
+      }).done(function(data, status, jqXHR){
+      $('<pre>').text(JSON.stringify(data, null, 4))
+        .appendTo('body')})
+    </script>
+  </body>
+</html>

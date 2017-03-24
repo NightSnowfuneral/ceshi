@@ -1,0 +1,44 @@
+body {
+  font-family: "Helvetica Neue", Arial;
+  font-weight: 200;
+}
+
+a {
+  color: hsl(200, 50%, 50%);
+}
+
+a.active {
+  color: hsl(20, 50%, 50%);
+}
+
+
+.Sidebar {
+  float: left;
+  background: #eee;
+  padding: 20px;
+  margin: 0 20px 20px 20px;
+  width: 200px;
+  cursor: pointer;
+}
+
+.Content {
+  padding: 20px 20px 20px 300px;
+}
+
+.CategoryNav__Toggle:before {
+  display: inline-block;
+  width: 1em;
+  content: '\25B8';
+}
+
+.CategoryNav__Toggle--is-open:before {
+  content: '\25BE';
+}
+
+a {
+  text-decoration: none;
+}
+.Master{
+background-color:red}
+
+
